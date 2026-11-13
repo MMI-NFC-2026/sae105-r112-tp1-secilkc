@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les chiens</title>
+  <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <button class="burger" type="button" popovertarget="menu" aria-label="Menu">
+      🍔
+    </button>
+
+    <nav class="menu" id="menu" popover aria-label="Main menu">
+      <button
+        class="menu__close burger burger--close"
+        type="button"
+        popovertarget="menu"
+        popovertargetaction="hide"
+        aria-label="Close the menu"
+        autofocus
+      >
+        🍔
+      </button>
+      <h4>menu</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../cats/index.html">Chats</a>
+          <ul>
+            <li><a href="../cats/chat-1.html">chat 1</a></li>
+            <li><a href="../cats/chat-2.html">chat 2</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">Chiens</a>
+          <ul>
+            <li><a href="chien-1.html">chien 1</a></li>
+            <li><a href="chien-2.html">chien 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Les chiens</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit maiores accusamus quisquam ad veritatis officiis numquam ex rem porro.</p>
+  </main>
+</body>
+
+</html>
