@@ -4,33 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Test de menu</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
 
 <body>
   <header class="header header--home">
-
-    <!-- Menu principal -->
-
-    <!-- Bouton d'ouverture : l'attribut popovertarget="menu" désigne l'élément
-         (par son id) à ouvrir/fermer. Cela fonctionne sans JavaScript :
-         un clic ouvre le menu, un second clic le ferme. -->
     <button class="burger" type="button" popovertarget="menu" aria-label="Menu">
       🍔
     </button>
 
-    <!-- L'attribut `popover` déclare l'élément comme un popover : il est masqué
-         par défaut (display: none) et s'affiche dans la « top layer » à
-         l'ouverture. Il se ferme avec Échap ou par un clic en dehors
-         (light dismiss). L'id="menu" est l'identifiant unique référencé par
-         les boutons via popovertarget. -->
     <nav class="menu" id="menu" popover aria-label="Main menu">
-
-      <!-- Bouton de fermeture explicite : popovertargetaction="hide" force
-           l'action « fermer » (au lieu de basculer ouvert/fermé).
-           `autofocus` place le focus sur ce bouton à l'ouverture du menu,
-           pour l'accessibilité : au clavier, Entrée ferme le menu. -->
       <button
         class="menu__close burger burger--close"
         type="button"
@@ -41,26 +25,29 @@
       >
         🍔
       </button>
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu un</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu deux</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu trois</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Item de menu quatre</a></li>
+      <h4>menu</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cats/index.html">Chats</a>
+          <ul>
+            <li><a href="cats/chat-1.html">chat 1</a></li>
+            <li><a href="cats/chat-2.html">chat 2</a></li>
+          </ul>
+        </li>
+        <li><a href="dogs/index.html">Chiens</a>
+          <ul>
+            <li><a href="dogs/chien-1.html">chien 1</a></li>
+            <li><a href="dogs/chien-2.html">chien 2</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
-    <!-- Fin du menu principal -->
   </header>
 
-  <!-- Contenu principal de la page -->
   <main>
-    <h1>Test de menu</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit maiores accusamus quisquam ad veritatis
-      officiis numquam ex rem porro, amet sapiente eaque. Rerum excepturi eaque atque ipsa quos mollitia.
-    </p>
+    <h1>Accueil</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit maiores accusamus quisquam ad veritatis officiis numquam ex rem porro.</p>
   </main>
-  <!-- Fin du contenu principal -->
-
 </body>
 
 </html>
